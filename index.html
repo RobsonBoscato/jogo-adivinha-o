@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo Adivinhação</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -12,10 +20,15 @@
     <main>
       <div id="mainbox">
         <div id="insidebox">
-          <p>Jogo da Adivinhação</p>
-          Adivinhe o número entre 0 e 10
+          <p>
+            <strong>Jogo da Adivinhação</strong>
+            <span><br />Adivinhe o número entre 0 e 10</span>
+          </p>
+        </div>
 
+        <div id="button">
           <input type="number" name="numberfield" id="numberfield" />
+          <button>Tentar</button>
         </div>
       </div>
     </main>
