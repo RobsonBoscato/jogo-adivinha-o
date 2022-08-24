@@ -3,9 +3,10 @@
 }
 
 body {
+  font-family: 'DM Sans', sans-serif;
+
   background: linear-gradient(287.56deg, #c2e9fb 0%, #a1c4fd 100%);
   font-size: 1.6rem;
-
   display: grid;
   place-items: center;
   height: 100vh;
@@ -15,33 +16,91 @@ main {
   background: #ffffff;
   box-shadow: 0 rem 2rem 4rem rgba(0, 0, 0, 0.1);
   border-radius: 0.6rem;
-
   width: min(42.8rem, 90%);
+  margin-top: -12rem;
 }
 
-#mainbox {
+.hidden {
+  display: none;
+}
+
+#mainbox,
+.screen2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 2rem 2.8rem 2rem;
+  padding: 4rem 5.4rem 5.4rem 5.4rem;
   gap: 4.8rem;
-
   text-align: center;
 }
 
-#insidebox strong {
+form {
+  display: flex;
+  justify-content: center;
+}
+
+/* screen 1 */
+
+#insidebox h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 3rem;
+  color: #34355bcc;
 }
-#insidebox span {
+
+#insidebox p {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #34355bcc;
+  opacity: 0.8;
+}
+
+button,
+input {
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+  padding: 1.6rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+input {
+  background-color: #dce2e9;
+  width: 3rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  background: #7879f1;
+  color: white;
+  border-radius: 0 0.4rem 0.4rem 0;
+  line-height: 2rem;
 }
 
 #button {
-  background: #7879f1;
+  display: flex;
+}
+
+/* screen 2 */
+
+h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: normal;
+
+  margin-bottom: 3.2rem;
+
+  font-weight: normal;
+}
+
+.screen2 button {
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+button:hover {
+  background: #6d6dc5;
 }

@@ -3,33 +3,38 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo Adivinhação</title>
+    <link rel="stylesheet" href="style.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&family=Montserrat:wght@600&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <div id="mainbox">
-        <div id="insidebox">
-          <p>
-            <strong>Jogo da Adivinhação</strong>
-            <span><br />Adivinhe o número entre 0 e 10</span>
-          </p>
-        </div>
+      <div class="screen1 hidden">
+        <div id="mainbox">
+          <div id="insidebox">
+            <h1>Jogo da Adivinhação</h1>
+            <p>Adivinhe o número entre 0 e 10</p>
+          </div>
 
-        <div id="button">
-          <input type="number" name="numberfield" id="numberfield" />
-          <button>Tentar</button>
+          <form action="guess">
+            <div id="button">
+              <input type="number" name="numberfield" id="numberfield" />
+              <button>Tentar</button>
+            </div>
+          </form>
         </div>
+      </div>
+
+      <div class="screen2">
+        <h2>Acertou</h2>
+        <button>Jogar novamente</button>
       </div>
     </main>
   </body>
