@@ -36,7 +36,6 @@ function numberCheck(numberAttempt) {
     ).innerText = `Você acertou em ${Attempts} tentativas.`;
   }
   Attempts++;
-  console.log(Attempts);
 }
 
 function handleResetClick() {
